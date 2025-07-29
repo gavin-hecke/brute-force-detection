@@ -6,7 +6,7 @@ import argparse
 # detect brute-force login attempts based on failed logins through number of attempts and time
 def detect_brute_force(logs, fail_threshold=5, window_minutes=5):
 
-    # Convert raw logs to a pandas DataFrame 
+    # Convert json logs to a pandas DataFrame for easier manipulation
     df = pd.DataFrame(logs)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     df = df[df['status'] == 'FAIL']
@@ -24,7 +24,7 @@ def detect_brute_force(logs, fail_threshold=5, window_minutes=5):
 
         for i in range(len(ip_df)):
 
-            # have to do it like this so
+            # iloc lets you grab the row by position regardless of the index label
             start_time = ip_df.iloc[i]['timestamp']
             end_time = start_time + timedelta(minutes=window_minutes)
 
@@ -60,7 +60,7 @@ def main():
     window_minutes = int(input("Enter window in minutes to look through: "))
     results = detect_brute_force(logs, fail_threshold, window_minutes)
 
-    # save to a CSV, unless no activity is detected then print no activity was detected
+    # save to a CSV, unless no activity is detected, then print no activity was detected
     if results:
         pd.DataFrame(results).to_csv(args.output, index=False)
         print(f"\nSuspicious activity written to {args.output}")
