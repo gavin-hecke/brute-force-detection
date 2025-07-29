@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2025-07-29T01:00:00Z",
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:00:10Z",
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:00:20Z",
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:00:30Z",
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:00:40Z",
+    "username": "alice",
+    "ip": "192.168.1.10",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:01:00Z",
+    "username": "bob",
+    "ip": "192.168.1.20",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:01:10Z",
+    "username": "bob",
+    "ip": "192.168.1.20",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2025-07-29T01:02:00Z",
+    "username": "charlie",
+    "ip": "192.168.1.30",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:02:10Z",
+    "username": "charlie",
+    "ip": "192.168.1.30",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:02:20Z",
+    "username": "charlie",
+    "ip": "192.168.1.30",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:02:30Z",
+    "username": "charlie",
+    "ip": "192.168.1.30",
+    "status": "FAIL"
+  },
+  {
+    "timestamp": "2025-07-29T01:02:40Z",
+    "username": "charlie",
+    "ip": "192.168.1.30",
+    "status": "FAIL"
+  }
+]
